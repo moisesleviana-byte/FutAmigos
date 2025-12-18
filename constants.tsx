@@ -1,0 +1,77 @@
+
+import { Athlete, Position, PlayerStatus, PaymentRecord } from './types';
+
+export const MOCK_ATHLETES: Athlete[] = [
+  {
+    id: '1',
+    name: 'Carlos Mendes',
+    cpf: '123.456.789-00',
+    birthDate: '1990-05-15',
+    phone: '(11) 98765-4321',
+    email: 'carlos.m@email.com',
+    position: Position.GOLEIRO,
+    number: 1,
+    status: PlayerStatus.MENSALISTA,
+    avatar: 'https://lh3.googleusercontent.com/aida-public/AB6AXuCaXbg8HHxZvPwxytOn9epE-iJ8VwcKt-zUBdreIdzwCykEbdGVAx0ECZdsUTAa_SXuRwpAmYlP6ymITLAxql2zyNLRxa-qbuS0CGAR6ASScFNDJolxnjmVv5b5EXMKLQLEyqWjxvpZhVHOFL__gT7-Cehy6geZj0gNdeJSsBLNUHALU0DgjzXzEzX40TG4vAhrLBIploawyVhHmBGB1A-SelKbQ7RENbloe543sN9hH6GB-420wGSo9w4jE1ZJRkgRrT-46tB_wnc',
+    skillLevel: 4,
+  },
+  {
+    id: '2',
+    name: 'João Silva',
+    cpf: '234.567.890-11',
+    birthDate: '1992-08-20',
+    phone: '(11) 97654-3210',
+    email: 'joao.silva@email.com',
+    position: Position.MEIA,
+    number: 10,
+    status: PlayerStatus.MENSALISTA,
+    avatar: 'https://lh3.googleusercontent.com/aida-public/AB6AXuBPBwxmjgQTGpAlKuYjQRYkGASrbVEe1kvlF3pyYIsAOiW3L6Fi2A_M-dOpNNcEYiKJJ-oIzBjen7ymZmILhc5qmHbvOm8bo3yv_TMu3evWWSP15eGGazQ8pbdxgLh4YCjXrRoywHgUuZLId-nLA41GRV5k_BlXwhSJ6ozCei8KCpZq_4B7iAJA6PY9rOIqA2QFqaLBF4Z84LT99N_RjV9Px-in8NE309VV-5HWDLaEgE0yZdQIA0hQGPABXxKBYDDrbS8qYv9g91A',
+    skillLevel: 5,
+  },
+  {
+    id: '3',
+    name: 'Lucas Silva',
+    cpf: '345.678.901-22',
+    birthDate: '1995-12-01',
+    phone: '(11) 91234-5678',
+    email: 'lucas.s@email.com',
+    position: Position.ATAQUE,
+    number: 9,
+    status: PlayerStatus.MENSALISTA,
+    avatar: 'https://lh3.googleusercontent.com/aida-public/AB6AXuDXn1YbY_IgxNZSoXVBcJxtWNwbPPNHl1uXc_NgT30ZpZRTIOB-nIYmyLFAVl8UAc8QG-gO4XUn-t11QBXjLTv7OLCnYTC3_6ofN3vFoVqGa96PE7fRinATtPCQGPrhp2z2JQin5m4JWJwH65-uofngsZu70Wc-Xo8x4g7f3xGm9oPRG0UE1md0fkbtI5Pp6y6Q7gj1RI3ejj1G1_fNz3VKlkioNsnQJWKWbPs-PeybyBEYTXd6r-Ztc0nDmPC9FOIaBFOYj2W7Joo',
+    skillLevel: 4,
+  },
+  {
+    id: '4',
+    name: 'Rafael Costa',
+    cpf: '456.789.012-33',
+    birthDate: '1988-03-10',
+    phone: '(11) 92345-6789',
+    email: 'rafael.c@email.com',
+    position: Position.DEFESA,
+    number: 4,
+    status: PlayerStatus.MENSALISTA,
+    avatar: 'https://lh3.googleusercontent.com/aida-public/AB6AXuAJHqG_FCkl-OqB8mfhE7zn8ac4kyLOokmz0Avk3sdpGTSV96TehEUV87f-Gqhq9XcFlcts5EcHvo9wmvmujz72J_u-X0IoMgsG4pfGGULPA1TG5lw-KqY5nIo0xdNm7e9EpU_c-gwTY8fmgCCw3Ti0mmE9g8ZuOJKdiu82AZkNN2OlbjJ3M0VUDiw1cBvpxw-CQbF3Tcb6j73twygptF8vUtyKnFdF9vZvhPjsl2qdJz5PdKQAo8Ist0FVS0YFRr7vXNEhEqqAVBk',
+    skillLevel: 3,
+  },
+  {
+    id: '5',
+    name: 'Bruno Alves',
+    cpf: '567.890.123-44',
+    birthDate: '1993-07-22',
+    phone: '(11) 93456-7890',
+    email: 'bruno.a@email.com',
+    position: Position.MEIA,
+    number: 5,
+    status: PlayerStatus.CONVIDADO,
+    avatar: 'https://lh3.googleusercontent.com/aida-public/AB6AXuAXOQDdVJ4mxH7FqjIVi5GcloHDjMsAJeI5E3CfVpuT7X3J_IoNfStWtB2G-proYbJgd-hRRHW9meINofCsGUbUc6nCulFSpHQ5zYG5rVS0dHdgkQt3AJoOJaeszdjxoI3QFZboibvF2Xo6pP8ROnjfpWCezZF4YpJHDZFPH7wWs_Mpo4CwbL1ogRBTP8-3oJ2pxP-x-EQt7CC6uO9GdrPrcHD6kQtw1DBH-dh0AzQw3t22fAxTz_dEAS9HAQ8hQG9nNy4SwPbYRH4',
+    skillLevel: 4,
+  }
+];
+
+export const MOCK_PAYMENTS: PaymentRecord[] = [
+  { month: 'Outubro', year: 2023, amount: 80.00, status: 'Pendente', dueDate: '10 Out 2023' },
+  { month: 'Setembro', year: 2023, amount: 80.00, status: 'Pago', dueDate: '10 Set 2023', paidDate: '08/09' },
+  { month: 'Agosto', year: 2023, amount: 80.00, status: 'Pago', dueDate: '10 Ago 2023', paidDate: '10/08' },
+  { month: 'Julho', year: 2023, amount: 80.00, status: 'Pago', dueDate: '10 Jul 2023', paidDate: '09/07' },
+];

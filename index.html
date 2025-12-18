@@ -1,0 +1,82 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR" class="light">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Soçaite Manager</title>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Spline+Sans:wght@300;400;500;600;700&family=Noto+Sans:wght@400;500;700&display=swap" rel="stylesheet" />
+    <!-- Material Symbols -->
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet" />
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <script>
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              "primary": "#f9f506",
+              "background-light": "#f8f8f5",
+              "background-dark": "#1a190b",
+              "surface-light": "#ffffff",
+              "surface-dark": "#2d2c1b",
+              "text-main-light": "#181811",
+              "text-main-dark": "#f2f2e8",
+              "text-secondary-light": "#8c8b5f",
+              "text-secondary-dark": "#adaa8a",
+              "border-light": "#e6e6db",
+              "border-dark": "#454430",
+            },
+            fontFamily: {
+              "display": ["Spline Sans", "Noto Sans", "sans-serif"]
+            },
+            borderRadius: {
+              "DEFAULT": "1rem", 
+              "lg": "2rem", 
+              "xl": "3rem", 
+              "full": "9999px"
+            },
+          },
+        },
+      }
+    </script>
+    <style>
+      body {
+        min-height: 100dvh;
+        margin: 0;
+        overflow-x: hidden;
+      }
+      .no-scrollbar::-webkit-scrollbar {
+          display: none;
+      }
+      .no-scrollbar {
+          -ms-overflow-style: none;
+          scrollbar-width: none;
+      }
+      /* Custom grass pattern for tactical board */
+      .grass-pattern {
+          background-color: #2E7D32;
+          background-image: 
+              linear-gradient(0deg, transparent 24%, rgba(255, 255, 255, .05) 25%, rgba(255, 255, 255, .05) 26%, transparent 27%, transparent 74%, rgba(255, 255, 255, .05) 75%, rgba(255, 255, 255, .05) 76%, transparent 77%, transparent),
+              linear-gradient(90deg, transparent 24%, rgba(255, 255, 255, .05) 25%, rgba(255, 255, 255, .05) 26%, transparent 27%, transparent 74%, rgba(255, 255, 255, .05) 75%, rgba(255, 255, 255, .05) 76%, transparent 77%, transparent);
+          background-size: 50px 50px;
+      }
+    </style>
+  <script type="importmap">
+{
+  "imports": {
+    "react/": "https://esm.sh/react@^19.2.3/",
+    "react": "https://esm.sh/react@^19.2.3",
+    "react-dom/": "https://esm.sh/react-dom@^19.2.3/"
+  }
+}
+</script>
+</head>
+  <body class="bg-background-light dark:bg-background-dark font-display antialiased text-text-main-light dark:text-text-main-dark">
+    <div id="root"></div>
+  </body>
+</html>

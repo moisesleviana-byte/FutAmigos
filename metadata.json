@@ -1,0 +1,7 @@
+{
+  "name": "Soçaite Manager",
+  "description": "A comprehensive soccer team management application for athletes registration, financial tracking, presence control, and tactical planning.",
+  "requestFramePermissions": [
+    "camera"
+  ]
+}
